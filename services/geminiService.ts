@@ -9,7 +9,7 @@ if (!API_KEY) {
   console.warn("API_KEY environment variable not set. AI Advisor will not function.");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenerativeAI(API_KEY);
 
 export const getStrategicAdvice = async (
   simulationInput: SimulationInput,
