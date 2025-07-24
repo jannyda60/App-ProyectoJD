@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App'; // Asegúrate de que este path sea correcto para App.tsx
+
+console.log("Valor de VITE_GEMINI_API_KEY en index.tsx:", import.meta.env.VITE_GEMINI_API_KEY);
 
 const rootElement = document.getElementById('root');
 
 if (!rootElement) {
-  throw new Error('Could not find root element to mount to');
+  console.error('No se pudo encontrar el elemento root para montar la aplicación.');
+} else {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 }
-
-const root = ReactDOM.createRoot(rootElement);
-
-root.render(
-  <React.StrictMode>
-    <h1>¡Hola desde React!</h1> {/* Un simple encabezado */}
-  </React.StrictMode>
-);
