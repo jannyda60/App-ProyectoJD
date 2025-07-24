@@ -1,0 +1,6 @@
+{
+  "name": "BCP Local Delivery: Panel Interactivo",
+  "description": "Un panel interactivo y herramienta de simulación para el modelo de negocio de BCP Local Delivery Ltd. Permite a los usuarios explorar proyecciones financieras, entender la mecánica operativa y analizar la viabilidad del proyecto con recomendaciones estratégicas impulsadas por IA.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
