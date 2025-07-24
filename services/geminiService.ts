@@ -1,4 +1,4 @@
-import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
+import { GoogleGenerativeAI, GenerateContentResponse } from "@google/generative-ai";
 import { FinancialResult, SimulationInput } from '../types';
 
 // IMPORTANT: This check is for the web environment where process.env is not available.
