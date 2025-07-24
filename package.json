@@ -15,8 +15,8 @@
     "recharts": "^2.1.14"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4"
-  }
+  "@vitejs/plugin-react": "^4.0.0", // Añade esta línea
+  "@types/node": "^20.11.24",
+  "typescript": "^5.2.2",
+  "vite": "^5.1.4"
 }
