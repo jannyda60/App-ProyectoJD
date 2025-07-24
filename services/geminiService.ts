@@ -3,7 +3,7 @@ import { FinancialResult, SimulationInput } from '../types';
 
 // IMPORTANT: This check is for the web environment where process.env is not available.
 // In a real production build, the API key would be handled by the build environment.
-const API_KEY = process.env.API_KEY || "";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!API_KEY) {
   console.warn("API_KEY environment variable not set. AI Advisor will not function.");
