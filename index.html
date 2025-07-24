@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panel Interactivo BCP</title>
-    <script type="module">
-      import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai@^0.1.0";
+    <!-- Este es el "mapa" que le dice al navegador dónde encontrar las librerías -->
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/generative-ai",
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+        }
+      }
     </script>
   </head>
   <body>
+    <!-- Este es el "contenedor" donde se dibuja la app -->
     <div id="root"></div>
+    <!-- Este es el script principal de tu aplicación -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
